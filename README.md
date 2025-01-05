@@ -20,3 +20,7 @@
 ```bash
 npm run start
 ```
+
+# 常见打包问题
+
+![image](https://github.com/user-attachments/assets/540b6a5f-2050-4771-95e2-90b0c452c77b)
