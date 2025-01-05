@@ -1,0 +1,46 @@
+{
+  "version": "2.0.0",
+  "description": "边缘骇客药草宝宝迷你桌面宠物",
+  "author": "上海预醒网络科技有限公司",
+  "name": "EdgeHaker-Mini-Bot",
+  "homepage": "https://livehelper.willwaking.com/",
+  "scripts": {
+    "start": "chcp 65001 && electron .",
+    "pack": "electron-builder --win --x64"
+  },
+  "build": {
+    "appId": "EdgeHaker-Mini-Bot",
+    "productName": "药草宝宝迷你桌面宠物",
+    "directories": {
+      "output": "build"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": "always",
+      "createStartMenuShortcut": true,
+      "shortcutName": "药草宝宝迷你桌面宠物",
+      "license": "LICENSE.txt",
+      "uninstallDisplayName": "UnInstall"
+    }
+  },
+  "nsis": {
+    "oneClick": false,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "moment": "^2.29.4",
+    "node-schedule": "^2.1.1",
+    "uuid": "^9.0.1",
+    "validator": "^13.11.0"
+  },
+  "devDependencies": {
+    "electron": "27.1.3"
+  }
+}
