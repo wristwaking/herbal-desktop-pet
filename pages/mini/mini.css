@@ -22,7 +22,7 @@
     width: 120px;
     height: 120px;
     display: block;
-    background-image: url(./assets/mini.png);
+    background-image: url(../../assets/mini.png);
     -webkit-app-region: no-drag;
     background-size: cover;
     user-select: none;
